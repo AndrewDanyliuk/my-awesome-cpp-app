@@ -1,7 +1,7 @@
-#ifndef PROJECT_NAME_UPPER_EXAMPLE_H
-#define PROJECT_NAME_UPPER_EXAMPLE_H
+#ifndef MY_AWESOME_CPP_APP_EXAMPLE_H
+#define MY_AWESOME_CPP_APP_EXAMPLE_H
 
-namespace PROJECT_NAME_LOWER {
+namespace my_awesome_cpp_app {
 
 /**
  * @brief A simple example class demonstrating basic functionality
@@ -38,6 +38,6 @@ private:
     int value_;
 };
 
-}  // namespace PROJECT_NAME_LOWER
+}  // namespace my_awesome_cpp_app
 
-#endif  // PROJECT_NAME_UPPER_EXAMPLE_H
+#endif  // MY_AWESOME_CPP_APP_EXAMPLE_H

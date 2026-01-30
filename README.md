@@ -1,4 +1,4 @@
-# PROJECT_NAME_CAMEL
+# MyAwesomeCppApp
 
 A modern C++ project template with comprehensive tooling support.
 
@@ -170,7 +170,7 @@ ctest --test-dir build --output-on-failure
 ## Project Structure
 
 ```
-PROJECT_NAME/
+my-awesome-cpp-app/
 ├── CMakeLists.txt           # Main build configuration
 ├── CMakePresets.json        # CMake preset definitions
 ├── cmake.options            # Quick configuration (optional)
@@ -190,7 +190,7 @@ PROJECT_NAME/
 │   ├── PreCommit.cmake      # Pre-commit hook installation
 │   └── PreventInSourceBuilds.cmake
 ├── include/                 # Public headers
-│   └── PROJECT_NAME_LOWER/
+│   └── my_awesome_cpp_app/
 │       └── example.h
 ├── src/                     # Implementation files
 │   ├── CMakeLists.txt
@@ -254,7 +254,7 @@ Create test files in `tests/` directory:
 
 ```cpp
 #include <catch2/catch_test_macros.hpp>
-#include "PROJECT_NAME_LOWER/example.h"
+#include "my_awesome_cpp_app/example.h"
 
 TEST_CASE("My test", "[tag]")
 {
@@ -471,7 +471,7 @@ Options: `none`, `awesome`, `awesome-sidebar`
 Edit `src/CMakeLists.txt`:
 
 ```cmake
-add_library(${PROJECT_NAME}_lib
+add_library(__CMAKE_my-awesome-cpp-app___lib
     example.cpp
     new_file.cpp  # Add here
 )
@@ -492,7 +492,7 @@ TEST_CASE("New feature test", "[new]")
 
 2. Edit `tests/CMakeLists.txt`:
 ```cmake
-add_executable(${PROJECT_NAME}_tests
+add_executable(__CMAKE_my-awesome-cpp-app___tests
     test_example.cpp
     test_new_feature.cpp  # Add here
 )
@@ -511,7 +511,7 @@ CPMAddPackage(
     VERSION 3.11.3
 )
 
-target_link_libraries(${PROJECT_NAME}_lib
+target_link_libraries(__CMAKE_my-awesome-cpp-app___lib
     PUBLIC
         fmt::fmt
         nlohmann_json::nlohmann_json

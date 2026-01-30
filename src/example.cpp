@@ -1,6 +1,6 @@
-#include "PROJECT_NAME_LOWER/example.h"
+#include "my_awesome_cpp_app/example.h"
 
-namespace PROJECT_NAME_LOWER {
+namespace my_awesome_cpp_app {
 
 Example::Example(int value) : value_(value) {}
 
@@ -20,4 +20,4 @@ int Example::add(int amount)
     return value_;
 }
 
-}  // namespace PROJECT_NAME_LOWER
+}  // namespace my_awesome_cpp_app

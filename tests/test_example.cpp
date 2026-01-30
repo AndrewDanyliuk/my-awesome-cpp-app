@@ -10,9 +10,9 @@
 
 #include <gmock/gmock.h>
 
-#include "PROJECT_NAME_LOWER/example.h"
+#include "my_awesome_cpp_app/example.h"
 
-using namespace PROJECT_NAME_LOWER;
+using namespace my_awesome_cpp_app;
 using ::testing::Return;
 using ::testing::_;
 
